@@ -65,7 +65,7 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         jTextField1 = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
         jLabel11 = new javax.swing.JLabel();
-        jTabbedPane1 = new javax.swing.JTabbedPane();
+        Nuevo_Cliente = new javax.swing.JTabbedPane();
         pnlProductos = new javax.swing.JPanel();
         panelIngresoDeProductos = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -254,7 +254,6 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         panelEsquinaSuperiorIzquierda.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Inicio");
         panelEsquinaSuperiorIzquierda.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 33, 200, 40));
@@ -468,12 +467,10 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         panelSuperior.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lblReloj.setFont(new java.awt.Font("Dialog", 0, 24)); // NOI18N
-        lblReloj.setForeground(new java.awt.Color(0, 0, 0));
         lblReloj.setText("00:00:00 ");
         panelSuperior.add(lblReloj, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 150, 40));
 
         lblFecha.setFont(new java.awt.Font("Dialog", 0, 16)); // NOI18N
-        lblFecha.setForeground(new java.awt.Color(0, 0, 0));
         lblFecha.setText("DD/MM/YYYY");
         panelSuperior.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 50, 110, 20));
 
@@ -482,15 +479,12 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         jLabel2.setText("Punto de Venta");
         panelSuperior.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 10, -1, 60));
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
         jTextField1.setFont(new java.awt.Font("Arial", 0, 16)); // NOI18N
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
         jTextField1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 0, true));
         panelSuperior.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 30, 200, 30));
 
         jButton1.setBackground(new java.awt.Color(255, 255, 0));
         jButton1.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
         jButton1.setText("Buscar");
         panelSuperior.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 30, 90, 30));
 
@@ -499,86 +493,69 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
 
         getContentPane().add(panelSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 1100, 110));
 
-        jTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
+        Nuevo_Cliente.setBackground(new java.awt.Color(255, 255, 255));
 
         pnlProductos.setBackground(new java.awt.Color(255, 255, 255));
         pnlProductos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelIngresoDeProductos.setBackground(new java.awt.Color(255, 255, 255));
-        panelIngresoDeProductos.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Ingreso de Producto", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15), new java.awt.Color(0, 0, 0))); // NOI18N
+        panelIngresoDeProductos.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Ingreso de Producto", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15))); // NOI18N
         panelIngresoDeProductos.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel3.setText("Nombre:");
         panelIngresoDeProductos.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(93, 120, 55, 30));
 
         jLabel4.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel4.setText("Precio de Venta:");
         panelIngresoDeProductos.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 110, 30));
 
         jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel5.setText("Categoría:");
         panelIngresoDeProductos.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 480, 70, 30));
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel6.setText("Medida:");
         panelIngresoDeProductos.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 340, 60, 30));
 
         jLabel7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel7.setText("Precio de Compra:");
         panelIngresoDeProductos.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 265, 120, 30));
 
         jLabel8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 0));
         jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel8.setText("Código:");
         panelIngresoDeProductos.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(97, 40, 50, 30));
 
-        txtPrecioCompraProducto.setBackground(new java.awt.Color(255, 255, 255));
         txtPrecioCompraProducto.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoDeProductos.add(txtPrecioCompraProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 275, 150, 30));
 
-        txtCodigoProducto.setBackground(new java.awt.Color(255, 255, 255));
         txtCodigoProducto.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoDeProductos.add(txtCodigoProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 50, 150, 30));
 
-        txtNombreProducto.setBackground(new java.awt.Color(255, 255, 255));
         txtNombreProducto.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoDeProductos.add(txtNombreProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 125, 150, 30));
 
-        txtPrecioVentaProducto.setBackground(new java.awt.Color(255, 255, 255));
         txtPrecioVentaProducto.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoDeProductos.add(txtPrecioVentaProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 200, 150, 30));
 
         jLabel9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 0, 0));
         jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel9.setText("Preveedor:");
         panelIngresoDeProductos.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 410, 70, 30));
 
-        cboCategoriaProducto.setBackground(new java.awt.Color(255, 255, 255));
         cboCategoriaProducto.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        cboCategoriaProducto.setForeground(new java.awt.Color(0, 0, 0));
         panelIngresoDeProductos.add(cboCategoriaProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 490, 150, 35));
 
-        cboMedidaProducto.setBackground(new java.awt.Color(255, 255, 255));
         cboMedidaProducto.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        cboMedidaProducto.setForeground(new java.awt.Color(0, 0, 0));
         panelIngresoDeProductos.add(cboMedidaProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 350, 150, 35));
 
-        cboProveedorProducto.setBackground(new java.awt.Color(255, 255, 255));
         cboProveedorProducto.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        cboProveedorProducto.setForeground(new java.awt.Color(0, 0, 0));
         panelIngresoDeProductos.add(cboProveedorProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 420, 150, 35));
 
         btnIngresarProducto.setBackground(new java.awt.Color(0, 153, 255));
@@ -601,9 +578,7 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
 
         pnlProductos.add(panelIngresoDeProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(15, 15, 375, 600));
 
-        tblProductos.setBackground(new java.awt.Color(255, 255, 255));
         tblProductos.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        tblProductos.setForeground(new java.awt.Color(0, 0, 0));
         tblProductos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
 
@@ -632,37 +607,32 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         lblAtras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnlProductos.add(lblAtras, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 630));
 
-        jTabbedPane1.addTab("tab1", pnlProductos);
+        Nuevo_Cliente.addTab("Ingreso de producto", pnlProductos);
 
         pnlClientes2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelIngresoClientes2.setBackground(new java.awt.Color(255, 255, 255));
-        panelIngresoClientes2.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Nuevo Cliente", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15), new java.awt.Color(0, 0, 0))); // NOI18N
+        panelIngresoClientes2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nuevo Cliente", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15))); // NOI18N
         panelIngresoClientes2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel29.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(0, 0, 0));
         jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel29.setText("Teléfono:");
         panelIngresoClientes2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 90, 30));
 
         jLabel30.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel30.setForeground(new java.awt.Color(0, 0, 0));
         jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel30.setText("Dirección:");
         panelIngresoClientes2.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 110, 30));
 
         jLabel31.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(0, 0, 0));
         jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel31.setText("Nombre:");
         panelIngresoClientes2.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 100, 30));
 
-        txtNombreCliente2.setBackground(new java.awt.Color(255, 255, 255));
         txtNombreCliente2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoClientes2.add(txtNombreCliente2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 150, 30));
 
-        txtTelefonoCliente2.setBackground(new java.awt.Color(255, 255, 255));
         txtTelefonoCliente2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoClientes2.add(txtTelefonoCliente2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 150, 30));
 
@@ -684,10 +654,8 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         btnNuevoCliente2.setText("Nuevo");
         panelIngresoClientes2.add(btnNuevoCliente2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 90, 35));
 
-        txtDireccionCliente2.setBackground(new java.awt.Color(255, 255, 255));
         txtDireccionCliente2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         txtDireccionCliente2.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        txtDireccionCliente2.setForeground(new java.awt.Color(0, 0, 0));
         jScrollPane9.setViewportView(txtDireccionCliente2);
 
         panelIngresoClientes2.add(jScrollPane9, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 190, 120));
@@ -722,27 +690,24 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnlClientes2.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1500, 750));
 
-        jTabbedPane1.addTab("tab2", pnlClientes2);
+        Nuevo_Cliente.addTab("Nuevo cliente", pnlClientes2);
 
         pnlProveedores.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelIngresoProveedores.setBackground(new java.awt.Color(255, 255, 255));
-        panelIngresoProveedores.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Nuevo Proveedor", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15), new java.awt.Color(0, 0, 0))); // NOI18N
+        panelIngresoProveedores.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nuevo Proveedor", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15))); // NOI18N
         panelIngresoProveedores.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel15.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 0, 0));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel15.setText("Teléfono:");
         panelIngresoProveedores.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 90, 30));
 
         jLabel18.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(0, 0, 0));
         jLabel18.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel18.setText("RUC:");
         panelIngresoProveedores.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 70, 100, 30));
 
-        txtRucProveedor.setBackground(new java.awt.Color(255, 255, 255));
         txtRucProveedor.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoProveedores.add(txtRucProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 80, 150, 30));
 
@@ -765,29 +730,23 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         panelIngresoProveedores.add(btnNuevoProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 90, 35));
 
         jLabel19.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 0, 0));
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel19.setText("Nombre:");
         panelIngresoProveedores.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 100, 30));
 
-        txtTelefonoProveedor.setBackground(new java.awt.Color(255, 255, 255));
         txtTelefonoProveedor.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoProveedores.add(txtTelefonoProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 150, 30));
 
         jLabel20.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel20.setForeground(new java.awt.Color(0, 0, 0));
         jLabel20.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel20.setText("Dirección:");
         panelIngresoProveedores.add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 110, 30));
 
-        txtNombreProveedor.setBackground(new java.awt.Color(255, 255, 255));
         txtNombreProveedor.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoProveedores.add(txtNombreProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 150, 30));
 
-        txtDireccionProveedor.setBackground(new java.awt.Color(255, 255, 255));
         txtDireccionProveedor.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         txtDireccionProveedor.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        txtDireccionProveedor.setForeground(new java.awt.Color(0, 0, 0));
         jScrollPane4.setViewportView(txtDireccionProveedor);
 
         panelIngresoProveedores.add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 290, 190, 120));
@@ -822,33 +781,29 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnlProveedores.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 630));
 
-        jTabbedPane1.addTab("tab3", pnlProveedores);
+        Nuevo_Cliente.addTab("Nuevo proveedor", pnlProveedores);
 
         pnlUsuarios.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelNuevoUsuario.setBackground(new java.awt.Color(255, 255, 255));
-        panelNuevoUsuario.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Nuevo Usuario", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15), new java.awt.Color(0, 0, 0))); // NOI18N
+        panelNuevoUsuario.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nuevo Usuario", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15))); // NOI18N
         panelNuevoUsuario.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel22.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(0, 0, 0));
         jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel22.setText("Contraseña:");
         panelNuevoUsuario.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 180, 90, 30));
 
         jLabel23.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel23.setForeground(new java.awt.Color(0, 0, 0));
         jLabel23.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel23.setText("Rol:");
         panelNuevoUsuario.add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 330, 110, 30));
 
         jLabel24.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(0, 0, 0));
         jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel24.setText("RUC:");
         panelNuevoUsuario.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 100, 30));
 
-        txtRucClientes.setBackground(new java.awt.Color(255, 255, 255));
         txtRucClientes.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelNuevoUsuario.add(txtRucClientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 150, 30));
 
@@ -871,34 +826,25 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         panelNuevoUsuario.add(btnNuevoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 90, 35));
 
         jLabel25.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(0, 0, 0));
         jLabel25.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel25.setText("Nombre:");
         panelNuevoUsuario.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 100, 30));
 
-        txtNombreUsuario.setBackground(new java.awt.Color(255, 255, 255));
         txtNombreUsuario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelNuevoUsuario.add(txtNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 150, 30));
 
         jLabel26.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(0, 0, 0));
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel26.setText("Caja:");
         panelNuevoUsuario.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 110, 30));
 
-        cboRolUsario.setBackground(new java.awt.Color(255, 255, 255));
         cboRolUsario.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        cboRolUsario.setForeground(new java.awt.Color(0, 0, 0));
         panelNuevoUsuario.add(cboRolUsario, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 340, 150, 35));
 
-        cboCajaUsuario.setBackground(new java.awt.Color(255, 255, 255));
         cboCajaUsuario.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        cboCajaUsuario.setForeground(new java.awt.Color(0, 0, 0));
         panelNuevoUsuario.add(cboCajaUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 150, 35));
 
-        txtPasswordUsuario.setBackground(new java.awt.Color(255, 255, 255));
         txtPasswordUsuario.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        txtPasswordUsuario.setForeground(new java.awt.Color(0, 0, 0));
         txtPasswordUsuario.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         txtPasswordUsuario.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelNuevoUsuario.add(txtPasswordUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 150, 30));
@@ -933,12 +879,12 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnlUsuarios.add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 630));
 
-        jTabbedPane1.addTab("tab4", pnlUsuarios);
+        Nuevo_Cliente.addTab("Nuevo Usuario", pnlUsuarios);
 
         pnlCategoria.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelNuevaCategoria.setBackground(new java.awt.Color(255, 255, 255));
-        panelNuevaCategoria.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Nueva Categoría", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15), new java.awt.Color(0, 0, 0))); // NOI18N
+        panelNuevaCategoria.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Nueva Categoría", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15))); // NOI18N
         panelNuevaCategoria.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnIngresarCategoria.setBackground(new java.awt.Color(0, 153, 255));
@@ -960,12 +906,10 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         panelNuevaCategoria.add(btnNuevaCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 90, 35));
 
         jLabel36.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(0, 0, 0));
         jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel36.setText("Nombre:");
         panelNuevaCategoria.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 100, 30));
 
-        txtNombreCategoria.setBackground(new java.awt.Color(255, 255, 255));
         txtNombreCategoria.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelNuevaCategoria.add(txtNombreCategoria, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 220, 150, 30));
 
@@ -999,12 +943,12 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnlCategoria.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 640));
 
-        jTabbedPane1.addTab("tab5", pnlCategoria);
+        Nuevo_Cliente.addTab("Nueva categoria", pnlCategoria);
 
         pnlMedidas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelNuevaMedida.setBackground(new java.awt.Color(255, 255, 255));
-        panelNuevaMedida.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Medidas", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15), new java.awt.Color(0, 0, 0))); // NOI18N
+        panelNuevaMedida.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Medidas", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15))); // NOI18N
         panelNuevaMedida.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnIngresarMedida.setBackground(new java.awt.Color(0, 153, 255));
@@ -1026,22 +970,18 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         panelNuevaMedida.add(btnNuevaMedida, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 90, 35));
 
         jLabel37.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(0, 0, 0));
         jLabel37.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel37.setText("Medida:");
         panelNuevaMedida.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 200, 100, 30));
 
-        txtMedida.setBackground(new java.awt.Color(255, 255, 255));
         txtMedida.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelNuevaMedida.add(txtMedida, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, 150, 30));
 
         jLabel38.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel38.setForeground(new java.awt.Color(0, 0, 0));
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel38.setText("Nombre:");
         panelNuevaMedida.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 100, 30));
 
-        txtNombreMedida.setBackground(new java.awt.Color(255, 255, 255));
         txtNombreMedida.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelNuevaMedida.add(txtNombreMedida, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 150, 30));
 
@@ -1075,7 +1015,7 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnlMedidas.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 640));
 
-        jTabbedPane1.addTab("tab6", pnlMedidas);
+        Nuevo_Cliente.addTab("Medidas", pnlMedidas);
 
         pnlNuevaVenta.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1092,105 +1032,79 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         pnlNuevaVenta.add(jScrollPane13, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 1020, 390));
 
         jLabel35.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(0, 0, 0));
         jLabel35.setText("Precio");
         pnlNuevaVenta.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, -1, -1));
 
         jLabel39.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel39.setForeground(new java.awt.Color(0, 0, 0));
         jLabel39.setText("Producto");
         pnlNuevaVenta.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, -1, -1));
 
         jLabel40.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(0, 0, 0));
         jLabel40.setText("Cantidad");
         pnlNuevaVenta.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, -1, -1));
 
         jLabel41.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel41.setForeground(new java.awt.Color(0, 0, 0));
         jLabel41.setText("Total");
         pnlNuevaVenta.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, -1, -1));
 
         jLabel42.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel42.setForeground(new java.awt.Color(0, 0, 0));
         jLabel42.setText("Stock");
         pnlNuevaVenta.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 20, -1, -1));
 
         jLabel43.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel43.setForeground(new java.awt.Color(0, 0, 0));
         jLabel43.setText("Código");
         pnlNuevaVenta.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, -1, -1));
 
-        txtProductoEnVenta.setBackground(new java.awt.Color(255, 255, 255));
         txtProductoEnVenta.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtProductoEnVenta.setForeground(new java.awt.Color(0, 0, 0));
         txtProductoEnVenta.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaVenta.add(txtProductoEnVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, 130, 30));
 
-        txtPrecioProductoEnVenta.setBackground(new java.awt.Color(255, 255, 255));
         txtPrecioProductoEnVenta.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtPrecioProductoEnVenta.setForeground(new java.awt.Color(0, 0, 0));
         txtPrecioProductoEnVenta.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaVenta.add(txtPrecioProductoEnVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 90, 30));
 
-        txtTotalDeVenta.setBackground(new java.awt.Color(255, 255, 255));
         txtTotalDeVenta.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtTotalDeVenta.setForeground(new java.awt.Color(0, 0, 0));
         txtTotalDeVenta.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaVenta.add(txtTotalDeVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 100, 30));
 
-        txtCantidadDelProductoEnVenta.setBackground(new java.awt.Color(255, 255, 255));
         txtCantidadDelProductoEnVenta.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtCantidadDelProductoEnVenta.setForeground(new java.awt.Color(0, 0, 0));
         txtCantidadDelProductoEnVenta.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaVenta.add(txtCantidadDelProductoEnVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 50, 80, 30));
 
-        txtStockDelProducto.setBackground(new java.awt.Color(255, 255, 255));
         txtStockDelProducto.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtStockDelProducto.setForeground(new java.awt.Color(0, 0, 0));
         txtStockDelProducto.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaVenta.add(txtStockDelProducto, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 50, 40, 30));
 
-        txtPagarCon.setBackground(new java.awt.Color(255, 255, 255));
         txtPagarCon.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtPagarCon.setForeground(new java.awt.Color(0, 0, 0));
         txtPagarCon.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaVenta.add(txtPagarCon, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 560, 100, 30));
 
         btnGenerarVenta.setBackground(new java.awt.Color(255, 153, 0));
         btnGenerarVenta.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        btnGenerarVenta.setForeground(new java.awt.Color(0, 0, 0));
         btnGenerarVenta.setText("Generar Venta");
         pnlNuevaVenta.add(btnGenerarVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 30, 140, 40));
 
         jLabel44.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel44.setForeground(new java.awt.Color(0, 0, 0));
         jLabel44.setText("Cliente");
         pnlNuevaVenta.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 560, -1, -1));
 
         jLabel45.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel45.setForeground(new java.awt.Color(0, 0, 0));
         jLabel45.setText("Pagar Con:");
         pnlNuevaVenta.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 560, -1, -1));
 
         jLabel46.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel46.setForeground(new java.awt.Color(0, 0, 0));
         jLabel46.setText("Vuelto:");
         pnlNuevaVenta.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 560, -1, -1));
 
         jLabel47.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel47.setForeground(new java.awt.Color(0, 0, 0));
         jLabel47.setText("Total a Pagar:");
         pnlNuevaVenta.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 560, -1, -1));
 
-        cboCliente.setBackground(new java.awt.Color(255, 255, 255));
         cboCliente.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        cboCliente.setForeground(new java.awt.Color(0, 0, 0));
         cboCliente.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaVenta.add(cboCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 560, 140, -1));
 
         jLabel48.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel48.setForeground(new java.awt.Color(0, 0, 0));
         jLabel48.setText("Pagar Con:");
         pnlNuevaVenta.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 560, -1, -1));
 
@@ -1203,26 +1117,21 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         pnlNuevaVenta.add(txtTotalAPagar, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 560, 140, 30));
 
         jLabel49.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(0, 0, 0));
         jLabel49.setText("Pagar Con:");
         pnlNuevaVenta.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 560, -1, -1));
 
-        txtCodNuevaVenta.setBackground(new java.awt.Color(255, 255, 255));
         txtCodNuevaVenta.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtCodNuevaVenta.setForeground(new java.awt.Color(0, 0, 0));
         txtCodNuevaVenta.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaVenta.add(txtCodNuevaVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 100, 30));
 
-        txtVuelto.setBackground(new java.awt.Color(255, 255, 255));
         txtVuelto.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtVuelto.setForeground(new java.awt.Color(0, 0, 0));
         txtVuelto.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaVenta.add(txtVuelto, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 560, 100, 30));
 
         jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnlNuevaVenta.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 640));
 
-        jTabbedPane1.addTab("tab7", pnlNuevaVenta);
+        Nuevo_Cliente.addTab("Nueva venta", pnlNuevaVenta);
 
         pnlVentas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1254,7 +1163,7 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnlVentas.add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 640));
 
-        jTabbedPane1.addTab("tab8", pnlVentas);
+        Nuevo_Cliente.addTab("Lista ventas", pnlVentas);
 
         pnlCompras.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1286,37 +1195,32 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         jLabel64.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnlCompras.add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 640));
 
-        jTabbedPane1.addTab("tab9", pnlCompras);
+        Nuevo_Cliente.addTab("Lista compras", pnlCompras);
 
         pnl.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelIngresoClientes3.setBackground(new java.awt.Color(255, 255, 255));
-        panelIngresoClientes3.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(41, 43, 45)), "Datos de la Empresa", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15), new java.awt.Color(0, 0, 0))); // NOI18N
+        panelIngresoClientes3.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Datos de la Empresa", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial", 0, 15))); // NOI18N
         panelIngresoClientes3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel66.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel66.setForeground(new java.awt.Color(0, 0, 0));
         jLabel66.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel66.setText("Teléfono:");
         panelIngresoClientes3.add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 90, 30));
 
         jLabel67.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel67.setForeground(new java.awt.Color(0, 0, 0));
         jLabel67.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel67.setText("Mensaje:");
         panelIngresoClientes3.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 110, 30));
 
         jLabel68.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel68.setForeground(new java.awt.Color(0, 0, 0));
         jLabel68.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel68.setText("Ruc:");
         panelIngresoClientes3.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 100, 30));
 
-        txtRucEmpresa.setBackground(new java.awt.Color(255, 255, 255));
         txtRucEmpresa.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoClientes3.add(txtRucEmpresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 50, 150, 30));
 
-        txtTelefonoEmpresa.setBackground(new java.awt.Color(255, 255, 255));
         txtTelefonoEmpresa.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoClientes3.add(txtTelefonoEmpresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 150, 30));
 
@@ -1326,34 +1230,27 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         btnEditarCliente3.setText("Modificar");
         panelIngresoClientes3.add(btnEditarCliente3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 530, 90, 35));
 
-        txtMensaje.setBackground(new java.awt.Color(255, 255, 255));
         txtMensaje.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         txtMensaje.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        txtMensaje.setForeground(new java.awt.Color(0, 0, 0));
         jScrollPane17.setViewportView(txtMensaje);
 
         panelIngresoClientes3.add(jScrollPane17, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 190, 70));
 
         jLabel69.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel69.setForeground(new java.awt.Color(0, 0, 0));
         jLabel69.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel69.setText("Nombre:");
         panelIngresoClientes3.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, 100, 30));
 
-        txtNombreEmpresa.setBackground(new java.awt.Color(255, 255, 255));
         txtNombreEmpresa.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         panelIngresoClientes3.add(txtNombreEmpresa, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 120, 150, 30));
 
         jLabel70.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel70.setForeground(new java.awt.Color(0, 0, 0));
         jLabel70.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jLabel70.setText("Dirección:");
         panelIngresoClientes3.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, 110, 30));
 
-        txtDireccionEmpresa.setBackground(new java.awt.Color(255, 255, 255));
         txtDireccionEmpresa.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         txtDireccionEmpresa.setFont(new java.awt.Font("Arial", 0, 12)); // NOI18N
-        txtDireccionEmpresa.setForeground(new java.awt.Color(0, 0, 0));
         jScrollPane18.setViewportView(txtDireccionEmpresa);
 
         panelIngresoClientes3.add(jScrollPane18, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 270, 190, 110));
@@ -1363,7 +1260,7 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         jLabel65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnl.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 640));
 
-        jTabbedPane1.addTab("tab10", pnl);
+        Nuevo_Cliente.addTab("Datos empresa", pnl);
 
         pnlNuevaCompra.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1380,105 +1277,79 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         pnlNuevaCompra.add(jScrollPane14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, 1020, 400));
 
         jLabel50.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(0, 0, 0));
         jLabel50.setText("Precio");
         pnlNuevaCompra.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 20, -1, -1));
 
         jLabel51.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(0, 0, 0));
         jLabel51.setText("Producto");
         pnlNuevaCompra.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 20, -1, -1));
 
         jLabel52.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel52.setForeground(new java.awt.Color(0, 0, 0));
         jLabel52.setText("Cantidad");
         pnlNuevaCompra.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 20, -1, -1));
 
         jLabel53.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel53.setForeground(new java.awt.Color(0, 0, 0));
         jLabel53.setText("Total");
         pnlNuevaCompra.add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 20, -1, -1));
 
         jLabel54.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel54.setForeground(new java.awt.Color(0, 0, 0));
         jLabel54.setText("Stock");
         pnlNuevaCompra.add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 20, -1, -1));
 
         jLabel55.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel55.setForeground(new java.awt.Color(0, 0, 0));
         jLabel55.setText("Código");
         pnlNuevaCompra.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 20, -1, -1));
 
-        txtProductoNC.setBackground(new java.awt.Color(255, 255, 255));
         txtProductoNC.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtProductoNC.setForeground(new java.awt.Color(0, 0, 0));
         txtProductoNC.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaCompra.add(txtProductoNC, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 50, 130, 30));
 
-        txtPrecioProductoNC.setBackground(new java.awt.Color(255, 255, 255));
         txtPrecioProductoNC.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtPrecioProductoNC.setForeground(new java.awt.Color(0, 0, 0));
         txtPrecioProductoNC.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaCompra.add(txtPrecioProductoNC, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 50, 90, 30));
 
-        txtTotalNC.setBackground(new java.awt.Color(255, 255, 255));
         txtTotalNC.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtTotalNC.setForeground(new java.awt.Color(0, 0, 0));
         txtTotalNC.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaCompra.add(txtTotalNC, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 100, 30));
 
-        txtCantidadDelProductoNC.setBackground(new java.awt.Color(255, 255, 255));
         txtCantidadDelProductoNC.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtCantidadDelProductoNC.setForeground(new java.awt.Color(0, 0, 0));
         txtCantidadDelProductoNC.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaCompra.add(txtCantidadDelProductoNC, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 50, 80, 30));
 
-        txtStockNC.setBackground(new java.awt.Color(255, 255, 255));
         txtStockNC.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtStockNC.setForeground(new java.awt.Color(0, 0, 0));
         txtStockNC.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaCompra.add(txtStockNC, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 50, 40, 30));
 
-        txtPagarConNC.setBackground(new java.awt.Color(255, 255, 255));
         txtPagarConNC.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtPagarConNC.setForeground(new java.awt.Color(0, 0, 0));
         txtPagarConNC.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaCompra.add(txtPagarConNC, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 560, 100, 30));
 
         btnGenerarCompra.setBackground(new java.awt.Color(255, 153, 0));
         btnGenerarCompra.setFont(new java.awt.Font("Arial", 1, 16)); // NOI18N
-        btnGenerarCompra.setForeground(new java.awt.Color(0, 0, 0));
         btnGenerarCompra.setText("Generar Compra");
-        pnlNuevaCompra.add(btnGenerarCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 30, 140, 40));
+        pnlNuevaCompra.add(btnGenerarCompra, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 30, 170, 40));
 
         jLabel56.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel56.setForeground(new java.awt.Color(0, 0, 0));
         jLabel56.setText("Proveedor");
         pnlNuevaCompra.add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 560, -1, -1));
 
         jLabel57.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel57.setForeground(new java.awt.Color(0, 0, 0));
         jLabel57.setText("Pagar Con:");
         pnlNuevaCompra.add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 560, -1, -1));
 
         jLabel58.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel58.setForeground(new java.awt.Color(0, 0, 0));
         jLabel58.setText("Vuelto:");
         pnlNuevaCompra.add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 560, -1, -1));
 
         jLabel59.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel59.setForeground(new java.awt.Color(0, 0, 0));
         jLabel59.setText("Total a Pagar:");
         pnlNuevaCompra.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 560, -1, -1));
 
-        cboProveedor.setBackground(new java.awt.Color(255, 255, 255));
         cboProveedor.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        cboProveedor.setForeground(new java.awt.Color(0, 0, 0));
         cboProveedor.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaCompra.add(cboProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 560, 140, -1));
 
         jLabel60.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel60.setForeground(new java.awt.Color(0, 0, 0));
         jLabel60.setText("Pagar Con:");
         pnlNuevaCompra.add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 560, -1, -1));
 
@@ -1491,28 +1362,23 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
         pnlNuevaCompra.add(txtTotalAPagarNC, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 560, 140, 30));
 
         jLabel61.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel61.setForeground(new java.awt.Color(0, 0, 0));
         jLabel61.setText("Pagar Con:");
         pnlNuevaCompra.add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 560, -1, -1));
 
-        txtCodNC.setBackground(new java.awt.Color(255, 255, 255));
         txtCodNC.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtCodNC.setForeground(new java.awt.Color(0, 0, 0));
         txtCodNC.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaCompra.add(txtCodNC, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 100, 30));
 
-        txtVueltoNC.setBackground(new java.awt.Color(255, 255, 255));
         txtVueltoNC.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        txtVueltoNC.setForeground(new java.awt.Color(0, 0, 0));
         txtVueltoNC.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 2, true));
         pnlNuevaCompra.add(txtVueltoNC, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 560, 100, 30));
 
         jLabel62.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/fondo4_SV.png"))); // NOI18N
         pnlNuevaCompra.add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1100, 640));
 
-        jTabbedPane1.addTab("Nueva Compra", pnlNuevaCompra);
+        Nuevo_Cliente.addTab("Nueva Compra", pnlNuevaCompra);
 
-        getContentPane().add(jTabbedPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 1100, 650));
+        getContentPane().add(Nuevo_Cliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 1100, 650));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1590,6 +1456,7 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JTabbedPane Nuevo_Cliente;
     private javax.swing.JButton btnEditarCategoria;
     private javax.swing.JButton btnEditarCliente2;
     private javax.swing.JButton btnEditarCliente3;
@@ -1697,7 +1564,6 @@ public class FRMMenu extends javax.swing.JFrame implements Runnable {
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JScrollPane jScrollPane9;
-    public javax.swing.JTabbedPane jTabbedPane1;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JLabel lblAtras;
     public javax.swing.JLabel lblCategoria;
