@@ -5,7 +5,7 @@ package modelo;
  * @author mikey
  */
 public class Usuario {
-    
+    //PROBANDOOOOOOOOOO
     private int id;
     private String nombre;
     private String usuario;
